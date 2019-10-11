@@ -35,7 +35,7 @@ Run from the project dir the command
 ``
 serverless invoke --function wikiPageInfo -p req_data.json`` 
 
-#Response example 
+# Response example 
 ```shell script
 (proj_env) ➜  untitled1 serverless invoke --function wikiPageInfo -p req_data.json
 {
