@@ -1,8 +1,8 @@
-#Install  (checked on Python 3.6)
+# Install  (checked on Python 3.6)
 `pip install -r requirements.txt`
 
 ---------
-#Deploy into AWS Lambda
+# Deploy into AWS Lambda
 ## Pre requirements
  - install serverless framework
  - run `serverless login` and configure it for local usage locally (require AWS account)
@@ -46,16 +46,12 @@ serverless invoke --function wikiPageInfo -p req_data.json``
 ```
 
 
-#The same can be checked online by calling url (my already deployed version):
+# The same can be checked online by calling url (my already deployed version):
 
 https://sd0h0uwh64.execute-api.us-east-1.amazonaws.com/dev/ping?title=Wiki   
 
-with `title`- parameter for different pages. 
-
-or 
-
-
-https://sd0h0uwh64.execute-api.us-east-1.amazonaws.com/dev/ping
+with `title`- parameter for different pages.  or 
+ https://sd0h0uwh64.execute-api.us-east-1.amazonaws.com/dev/ping
 
 
 -----
