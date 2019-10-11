@@ -18,4 +18,3 @@ functions:
       - http:
           path: ping
           method: get
-      - sqs: arn:aws:sqs:us-east-1:396732758934:UpdateWikiInfo
