@@ -19,11 +19,9 @@
 {"queryStringParameters":{"title":"Wiki"}}
 ``
 
-or 
+ or ``{"queryStringParameters":{"title":"Washington,_D.C."}}
 ``
-{"queryStringParameters":{"title":"Washington,_D.C."}}
-``
-etc(different article titles).
+ etc(different article titles).
 
 2.. 
 Run from the project dir the command
@@ -49,9 +47,9 @@ serverless invoke --function wikiPageInfo -p req_data.json``
 # The same can be checked online by calling url (my already deployed version):
 
 https://sd0h0uwh64.execute-api.us-east-1.amazonaws.com/dev/ping?title=Wiki   
+with `title`- parameter for different pages.  
 
-with `title`- parameter for different pages.  or 
- https://sd0h0uwh64.execute-api.us-east-1.amazonaws.com/dev/ping
+or  https://sd0h0uwh64.execute-api.us-east-1.amazonaws.com/dev/ping
 
 
 -----
