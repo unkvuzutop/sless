@@ -5,7 +5,7 @@ import datetime
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
-QUEUE_URL = 'https://sqs.us-east-1.amazonaws.com/396732758934/UpdateWikiInfo'
+from config import SQS_QUEUE_URL
 
 
 def get_number_updates_last_month(updates):
@@ -45,7 +45,7 @@ def send_to_sqs(data):
     
     # Send message to SQS queue
     sqs_response = sqs.send_message(
-        QueueUrl=QUEUE_URL,
+        QueueUrl=SQS_QUEUE_URL,
         DelaySeconds=1,
         MessageAttributes={
             'Title': {
